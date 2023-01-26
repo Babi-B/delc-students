@@ -75,3 +75,8 @@ body{
     padding-right: 70px;
     padding-top: 5px;
 }
+.arrow{
+    display: flex;
+    padding-top: 100px;
+    padding-left: 250px;
+}
