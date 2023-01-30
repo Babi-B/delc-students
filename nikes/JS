@@ -1,0 +1,40 @@
+let gallery = document.querySelector('#gallery')
+let wrapper = document.querySelector('#galleryContainer')
+let moveGallery = 0;
+
+let dragging = false, mouseLocation, galleryLocation;
+
+const easeOutQuad = t => {
+  return 1 - (1 - t) * (1 - t);
+}
+
+moveGallery = () => {
+    moveVal = easeOutQuad(window.scrollY * -0.00420);
+    gallery.style.transform = `rotateZ(-5deg) translateX(${moveVal}%)`
+    
+    requestAnimationFrame(moveGallery);  
+  }
+
+  
+  requestAnimationFrame(moveGallery);
+
+  const dragStart = e => {
+    dragging = true;
+    mouseLocation = e.pageX;
+    galleryLocation = wrapper.scrollLeft;
+  }
+  const dragActive = e => {
+    if(!dragging) return;
+    
+    let offset = e.pageX - mouseLocation;
+    wrapper.scrollLeft = galleryLocation - offset;
+  }
+   const dragstop = e => {
+    dragging =false;
+    mouseLocation =e.pageX;
+    galleryLocation = wrapper.scrollLeft;
+   }
+   gallery.addEventListener('mousedown', dragStart);
+   gallery.addEventListener('mousemove',dragActive);
+   gallery.addEventListener('mouseup',dragstop);g
+  
