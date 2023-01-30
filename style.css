@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+.content {
+    width: 100%;
+    background-image: url('./assets/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+nav {
+    padding: 1rem 3rem;
+}
+.logo {
+    background-color: rgba(255, 255, 255, .2);
+    max-width: 80%;
+    height: auto;
+}
+header {
+    text-align: center;
+    color: white;
+    font-family: 'Lekton', sans-serif;
+    font-size: 3.2vw;
+    margin-top: 3rem;
+}
+
+main {
+    font-family: 'Spectral', serif;
+    text-align: center;
+}
+main p {
+    color: white;
+    font-size: 2rem;
+}
+.instructor {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 50%;
+    margin: 5rem auto 3rem;
+}
+
+ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    justify-content: space-around;
+    text-align: center;
+}
+ul li, .instructor {
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 10px;
+    box-shadow: inset 0px 4px 0 0 rgba(0, 0, 0, .25);
+    background-color: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(5px);
+    padding: 1rem;
+}
+
+ul li:hover, .instructor:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+.avatar {
+    height: 15rem;
+}
