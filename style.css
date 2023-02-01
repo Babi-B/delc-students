@@ -54,6 +54,7 @@ ul {
     list-style-type: none;
     display: grid;
     grid-template-columns: auto auto auto ;
+    grid-row-gap: 2rem;
     justify-content: space-around;
     text-align: center;
 }
@@ -77,11 +78,34 @@ footer {
     background-color: rgba(0, 0, 0, .4);
     color: white;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 5rem;
     font-size: 1.2rem;
 }
 .supervisor {
     color: white;
     text-decoration: underline;
+}
+.supervisor:hover {
+    color: rgb(0, 204, 255);
+}
+.copyright {
+    font-size: 15px;
+}
+@media only screen and (max-width: 1000px) {
+    ul {
+        display: grid;
+        grid-template-columns: auto auto ;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    ul {
+        display: grid;
+        grid-template-columns: auto ;
+    }
+    footer {
+        padding: 5rem 1rem;
+    }
 }
