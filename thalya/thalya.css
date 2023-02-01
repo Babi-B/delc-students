@@ -1,0 +1,187 @@
+#about-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.about-right{
+    width: 57%;
+}
+ul{
+    display: flex;
+    align-items: center;
+}
+li{
+    display: flex;
+    align-items: center;
+}
+h1{
+    color: orange;
+    font-size: 37px;
+    margin-bottom: 5px;
+}
+p{
+    color: black;
+    line-height: 26px;
+    font-size: 15px;
+}
+.address-logo{
+    margin: 25px 0;
+    color: orange;
+}
+.address{
+    text-align: center;
+    width: 500px;
+  height: 100px;
+  
+  
+}
+
+h5{
+    color: orange;
+    cursor: pointer;
+}
+    
+body{
+    background-color: wheat;
+    
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    position: relative;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar ul li{
+    font-size: 1.1rem;
+}
+.navbar ul li a{
+    padding: 5px 20px;
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar ul li a:hover{
+   border-bottom: 2px solid yellow;
+    transition: 0.5s;
+}
+.services{
+   background: #101010;
+    width: 100%;
+    padding: 100px 30px 30px;
+}
+.title h2{
+    color: beige;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.cards{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background: #191919;
+}
+h4{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.pra p{
+    color: #fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.cards .button{
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+    background-color: #f9004d;
+}
+.cards .button:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+.contact-me{
+width: 100%;
+height: 290px;
+background: #191919;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+}
+.contact-me p{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.contact-me .button-two{
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+    background-color: #f9004d;
+
+}
+.contact-me .button-two:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 758px){
+    .contact-me .button-two, .about-right, #about-section, .address{
+        width: 100%;
+    }
+.services, .cards .button, .contact-me, {
+    width: 100%;
+   
+}
+
+    *{
+        margin: 0;
+    }
+    
+    .cards .button, .navbar ul li a:hover, .title h2, .navbar, .navbar ul li, .navbar ul li a{
+        width: 100%;
+    }
+}
