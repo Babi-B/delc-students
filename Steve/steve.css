@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: 0;
+}
+.flex{
+    display:flex;
+    justify-content: space-around;
+}
+body{
+    background: #3baea0;
+}
+.flex #des p{
+    font-weight: 900px;
+    font-size:60px ;
+    color:#3baea0;
+    padding:35x ;
+    margin: auto;
+}
+.flex #cod p{
+    font-weight: 1000px;
+    font-size:60px;
+    color:#118a7e;
+}
+
+h1{
+    text-align: center;
+    font-weight: 700px;
+    font-family:'Times New Roman', Times, serif;
+}
+section div p{
+ font-size:25px;
+ font-weight: 500px;
+}
+.icons{
+    position: relative;
+    position: relative;
+    bottom:0px;
+    text-align: center;
+
+}
+.sectio{
+    display:flex;
+    background-color:#fdffcd ;
+    justify-content: space-around;
+     width: 99%;
+    border: 15px  ;
+    padding:40px;
+    margin:5px;
+}
+section h3{
+    color:#93e4c1;
+    font-size:35px;
+    text-decoration:underline;
+    font-family:"Lucida Console", "Courier New", monospace;
+}
